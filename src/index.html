@@ -2,16 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <!-- Логотип -->
-        <img src="https://via.placeholder.com/50" alt="Логотип">
-        <!-- Меню списком -->
-        <nav>
+    <header class="header">
+        <img src="https://via.placeholder.com/50" alt="Логотип" class="logo">
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -19,30 +17,28 @@
         </nav>
     </header>
 
-    <!-- Основное содержимое -->
-    <main>
-        <h1 class="title-h1">Добро пожаловать</h1> 
+    <main class="main-content">
+        <h1 class="main-title">Добро пожаловать</h1>
         <p class="text">Это произвольный текст для параграфа, который демонстрирует работу разметки.</p>
         
-        <h3 class="title-h3">Наши услуги</h3> 
-        <h4 class="title-h4">Качественно и очень быстро</h4> 
-        <p class="text">Короткий текст не более пятнадцати слов.</p> 
+        <h3 class="section-title">Наши услуги</h3>
+        <h4 class="sub-title">Качественно и очень быстро</h4>
+        <p class="text">Короткий текст не более пятнадцати слов.</p>
         
-        <h3 class="title-h3">О нас</h3> 
-        <p class="text">Еще немного текста.</p> 
+        <h3 class="section-title">О нас</h3>
+        <p class="text">Еще немного текста.</p>
         
         <hr>
     </main>
 
-    <!-- Подвал сайта -->
-    <footer>
-        <h3 class="title-h3">Наши контакты</h3> 
-        <p class="text">Свяжитесь с нами любым удобным способом.</p> 
+    <footer class="footer">
+        <h3 class="section-title">Наши контакты</h3>
+        <p class="text">Свяжитесь с нами любым удобным способом.</p>
         <hr>
-        <ul>
-            <li>Офис в центре города</li> 
-            <li>+7 (999) 123-45-67</li> 
-            <li>info@example.com</li> 
+        <ul class="contacts-list">
+            <li>Офис в центре города</li>
+            <li>+7 (999) 123-45-67</li>
+            <li>info@example.com</li>
         </ul>
         <p class="text">Все права защищены</p>
     </footer>

@@ -1,52 +1,59 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+/* --- ПОДКЛЮЧЕНИЕ ШРИФТОВ (Пункт 3 и 4 задания) --- */
+/* Если у вас есть локальные шрифты в fonts.css, оставьте import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Стили для параграфов (Пункт 5a) --- */
 .text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 }
 
-
-.title-h1 {
+/* --- Стили для заголовка h1 (Пункт 5b) --- */
+.main-title {
     font-size: 64px;
     color: #1F3F68;
 }
 
-
-.title-h2 {
+/* --- Стили для заголовка h2 (Пункт 5c) --- */
+.page-title {
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
 
-
-.title-h3 {
+/* --- Стили для заголовка h3 (Пункт 5d) --- */
+.section-title {
     font-size: 36px;
     text-align: center;
 }
 
-
-.title-h4 {
+/* --- Стили для заголовков h4 (Пункт 5e) --- */
+.sub-title {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 
-
-.form-input {
+/* --- Стили для полей ввода (Пункт 5f) --- */
+.input-field {
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
-    padding: 10px;
     width: 100%;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-
-.form-btn {
+/* --- Стили для кнопки (Пункт 5g) --- */
+.submit-btn {
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -57,31 +64,43 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
     cursor: pointer;
 }
 
-
+/* --- Фон для формы (Пункт 5h) --- */
 .contact-form {
-    /* Вставляем картинку с интернета для фона */
-    background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1000&auto=format&fit=crop'); 
+    background-image: url('https://via.placeholder.com/600x400/eee/999?text=Background');
     background-size: cover;
     background-position: center;
     padding: 40px;
     border-radius: 10px;
-    max-width: 600px;
-    margin: 0 auto; 
 }
 
+/* --- Простые стили для шапки и подвала, чтобы было не совсем голо --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
-.breadcrumbs {
-    margin: 20px 0;
-    font-size: 14px;
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
     color: #1F3F68;
 }
-.breadcrumbs a {
-    color: #5A98D0;
-    text-decoration: none;
+
+.main-content {
+    padding: 40px;
 }
 
-
+.footer {
+    background: #f4f6f9;
+    padding: 40px;
+}
